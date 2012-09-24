@@ -5,6 +5,7 @@
 		<?php
 		if(isset($_POST['submit']))
 		{
+			//test
 			$query = $db->prepare("SELECT * FROM personeel WHERE email=:email AND wachtwoord=:wachtwoord");
 
 			$query->bindParam(':email',$_POST['email']);
